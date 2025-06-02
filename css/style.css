@@ -815,4 +815,17 @@ footer p {
     margin-top: 30px;
     color: #004525;
 }
+  @media print {
+    footer {
+      break-inside: avoid;
+      page-break-inside: avoid;
+      page-break-before: avoid;
+      page-break-after: avoid;
+    }
 
+    /* 또는 필요 시 강제로 같은 페이지에 묶을 수 있는 wrapper */
+    .print-keep-together {
+      break-inside: avoid;
+      page-break-inside: avoid;
+    }
+  }
